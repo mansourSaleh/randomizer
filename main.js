@@ -4,7 +4,14 @@ const main = document.querySelector('main')
 
 function randomizeGroup(num) {
     const students = [
-        "faisal", "waleed", "abdullah", "sara", "hazim", "nawaf", "aysha", "nora", "ahlam", "ashwag", "hanan", "munera m", "eman", "munira s", "bdour", "azzam", "nada", "reem", "turki", "mansour", "abdulrahman", "suliman", "ahmad b", "ahmad m", "khalid"
+        "Abdullah Altamimi", "Abdulrahman Alfouzan", "Abdulrahman Aljammaz", "Abdulrahman Alshabibi", 
+        "Abdulwahhab AlBallaa", "Aisha Dabbagh", "Dalia Abdullah", "Fahad Abdullah", " Hisham Aljahbli", 
+        "Joseph Rulo", "Lama Alyousef", "Lamees Alfallaj", " Mesfer AlQahtani", 
+        " Moayad Alnuwaysir", " Mohammed Almarri", " Mohammed Alofaysan", " Monirah AlModhi", 
+        " Muhannad Alanazi", " Muneera Bin Hotan",  "Nawal Bin Dawood", "Noura Albukhaite", 
+        " Nouf Almatroudi", " Obaid Alqahtani", " Osama Alruthaya", " Raje Alharthi", 
+        " Sager Alarifi", " Sara Alghannamy", " Sarah Alghofaili", " Saud Alshamsi", 
+        " Sumayah Ali"
     ];
 
     students.sort(() => Math.random() - 0.5) //this is to shuffle the array so the students order is randomized within the students array
@@ -27,4 +34,5 @@ function randomizeGroup(num) {
 
 
 const button = document.getElementById("btn");
-button.addEventListener("click", () => randomizeGroup(4)); //the number you pass in the argument of the function is how many students you want in a single group
+button.addEventListener("click", () => randomizeGroup(5)); //the number you pass in the argument of the function is how many students you want in a single group
+
